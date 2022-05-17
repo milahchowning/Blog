@@ -1,0 +1,78 @@
+
+<i>Date: 10/15/2021</i>
+<h1>What is BootUp CTF?</h1>
+BootUp CTF is a free contest hosted by SANS. I like to think of it as a "warmup" to their Holiday Hack CTF. 
+<br></br>
+
+<h1>fe03</h1>
+
+Like many other CTFs, the first few challenges are easy and charming. 
+
+fe03 has you download a zip file, fe03.zip. Extract it and you'll find "document.rtf". 
+
+![Document](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yxdc191j1glh1jtkzaqd.PNG)
+
+Upon opening the document, it claims there's no flag there. However, I would like to disagree. If you press CTRL+A (or highlight the entire document) you'll notice there's a block at the bottom. Changing the text to red will reveal the flag.
+
+![Flag](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/m9eysk7xvz7qf7m6zg4q.PNG)
+
+> 𝐹𝑙𝑎𝑔: 𝑛𝑖𝐶𝑒𝐴𝑛𝐷𝐸𝑎𝑠𝑦10018
+
+<br></br>
+<br></br><h1>we02</h1>
+
+Next challenge from this group has us accessing a website. It's pretty simple with a prompt to login with a username and password. Your instincts should tell you to immediately open the source code/developer tools (time to brush up on my JavaScript and HTML!)
+
+![Block of Code](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1agk1bwd9baipa7b0ps3.PNG)
+
+<br></br>
+Wow - there's a lot to unpack here! First thing you might notice is the large block of text:
+```
+
+            var _0x42ed=['lYWTv3SyWQWt','bvbMW6ldRq/dS8kPW4/cSq=='];(function(_0x595452,_0x42edcc){var _0x2173eb=function(_0xea4820){while(--_0xea4820){_0x595452['push'](_0x595452['shift']());}};_0x2173eb(++_0x42edcc);}(_0x42ed,0x1db));var _0x2173=function(_0x595452,_0x42edcc){_0x595452=_0x595452-0x0;var _0x2173eb=_0x42ed[_0x595452];if(_0x2173['tZQOAs']===undefined){var _0xea4820=function(_0x272b2e){var _0x402ecc='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=',_0x168c24=String(_0x272b2e)['replace'](/=+$/,'');var _0x2782d7='';for(var _0xd63c78=0x0,_0x3a5c43,_0x6e8016,_0x2530d2=0x0;_0x6e8016=_0x168c24['charAt'](_0x2530d2++);~_0x6e8016&&(_0x3a5c43=_0xd63c78%0x4?_0x3a5c43*0x40+_0x6e8016:_0x6e8016,_0xd63c78++%0x4)?_0x2782d7+=String['fromCharCode'](0xff&_0x3a5c43>>(-0x2*_0xd63c78&0x6)):0x0){_0x6e8016=_0x402ecc['indexOf'](_0x6e8016);}return _0x2782d7;};var _0x53c2fe=function(_0x57e97c,_0x36be83){var _0x24abd0=[],_0x5dd9dd=0x0,_0x4dfeef,_0x4a19e0='',_0x3057e2='';_0x57e97c=_0xea4820(_0x57e97c);for(var _0x25d46a=0x0,_0x3da733=_0x57e97c['length'];_0x25d46a<_0x3da733;_0x25d46a++){_0x3057e2+='%'+('00'+_0x57e97c['charCodeAt'](_0x25d46a)['toString'](0x10))['slice'](-0x2);}_0x57e97c=decodeURIComponent(_0x3057e2);var _0x2237d8;for(_0x2237d8=0x0;_0x2237d8<0x100;_0x2237d8++){_0x24abd0[_0x2237d8]=_0x2237d8;}for(_0x2237d8=0x0;_0x2237d8<0x100;_0x2237d8++){_0x5dd9dd=(_0x5dd9dd+_0x24abd0[_0x2237d8]+_0x36be83['charCodeAt'](_0x2237d8%_0x36be83['length']))%0x100,_0x4dfeef=_0x24abd0[_0x2237d8],_0x24abd0[_0x2237d8]=_0x24abd0[_0x5dd9dd],_0x24abd0[_0x5dd9dd]=_0x4dfeef;}_0x2237d8=0x0,_0x5dd9dd=0x0;for(var _0x474627=0x0;_0x474627<_0x57e97c['length'];_0x474627++){_0x2237d8=(_0x2237d8+0x1)%0x100,_0x5dd9dd=(_0x5dd9dd+_0x24abd0[_0x2237d8])%0x100,_0x4dfeef=_0x24abd0[_0x2237d8],_0x24abd0[_0x2237d8]=_0x24abd0[_0x5dd9dd],_0x24abd0[_0x5dd9dd]=_0x4dfeef,_0x4a19e0+=String['fromCharCode'](_0x57e97c['charCodeAt'](_0x474627)^_0x24abd0[(_0x24abd0[_0x2237d8]+_0x24abd0[_0x5dd9dd])%0x100]);}return _0x4a19e0;};_0x2173['uHMPGg']=_0x53c2fe,_0x2173['KKFYdK']={},_0x2173['tZQOAs']=!![];}var _0x5ceb60=_0x2173['KKFYdK'][_0x595452];return _0x5ceb60===undefined?(_0x2173['UzpTdv']===undefined&&(_0x2173['UzpTdv']=!![]),_0x2173eb=_0x2173['uHMPGg'](_0x2173eb,_0x42edcc),_0x2173['KKFYdK'][_0x595452]=_0x2173eb):_0x2173eb=_0x5ceb60,_0x2173eb;};var akfa8o2aq02aasdg='Flag:\x20aNic'+_0x2173('0x0','ijJO')+_0x2173('0x1','QD1a');
+        
+```
+I'm not an expert at programming, but it looks like the "Flag:\x20..." indicates this weird mass computes the flag we need.
+
+<br></br>
+Next, we see the rest of the variables and an interesting while loop:
+
+```
+
+            $(document).ready(function() {
+                $("#submit").click(function(e) {
+                    e.preventDefault();
+                    var a = $("#username").val();
+                    var b = $("#password").val();
+                    var c = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                    var d = "";
+                    var i = 6;
+                    var y = 0;
+                    var l = 3;
+                    var n = 44;
+                    
+                    while (y < n) {
+                        d += c[(i*y)%61];
+                        i = c.charCodeAt(d)%61;
+                        y+=l;
+                    }
+                    
+                    if ($('#username').val() == "root") {
+                        if ($('#password').val() == d) {
+                            $('#output').text(akfa8o2aq02aasdg);
+                        }
+                    }
+
+                })
+            });
+        
+```
+
+<br></br>
+I wasn't sure what "charCodeAt" exactly meant, so I reached out to one of the most helpful resources I could find: w3schools. 
+By isolating the variables and the while loop and writing the final output of var "d", we got the flag!
+
+<br></br>
+Note: Due to some time constraints, 
+![Flag2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yxznx5coking16ft6gyt.PNG)
+> 𝐹𝑙𝑎𝑔: avHtf0Myk5RDpbW
